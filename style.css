@@ -7,6 +7,8 @@
     font-family: 'Jost', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
+/* Header
+-----------------*--------------*--------- */
 .banner{
     width: 80%;
     margin: 2% auto 4%;
@@ -14,7 +16,6 @@
     background-color: #1e1e1e;
     display: flex;
     color: #fff;
-    position: relative;
 }
 .banner-content{
     margin: 111px 25px 111px 106px;
@@ -42,11 +43,75 @@
     font-size: 16px;
 }
 .banner-image{
-    position: absolute;
-    bottom: 0;
-    right: 0px;
+    position: relative;
     width: 50%;
 }
 .banner-image img{
-    width: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 100%;
+}
+
+/* Tablate */
+@media screen and (min-width:431px) and (max-width:830px) {
+    .banner{
+        width: 87%;
+    }
+    .banner-content{
+        margin: 40px 20px;
+    }
+    .banner-content h1{
+        font-size: 32px;
+        line-height: 44px;
+       
+    }
+    .banner-content button{
+        width: 162px;
+        height: 50px;
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width:430px){
+    .banner{
+        width: 95%;
+        margin: 4% auto;
+        flex-direction: column;
+    }
+    .banner-content{
+        margin: 10% auto;
+        width: 100%;
+    }
+    .banner-content h1{
+        font-size: 2.8em;
+        line-height: 1.5em;
+        text-align: center;
+       
+    }
+    .banner-content p{
+        font-size: 1em;
+        line-height: 1.9em;
+        margin: 2em auto;
+        text-align: center;
+       
+    }
+    .banner-content button{
+        width: 30%;
+        height: 3.2em;
+        font-size: 1em;
+        display: block;
+        margin: auto;
+    }
+    .banner-image{
+        position: relative;
+        width: 100%;
+    }
+    .banner-image img{
+        position: static;
+        display: block;
+        margin: 10% auto 0;
+        width: 80%;
+    }
 }
