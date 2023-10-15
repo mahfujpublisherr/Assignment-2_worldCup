@@ -1,0 +1,52 @@
+/*---------------* common Style --------------*
+-----------------*--------------*------------ */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital@1&family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    width: 80%;
+    margin: 2% auto 4%;
+    border-radius: 30px;
+    background-color: #1e1e1e;
+    display: flex;
+    color: #fff;
+    position: relative;
+}
+.banner-content{
+    margin: 111px 25px 111px 106px;
+    width: 50%;
+}
+.banner-content h1{
+    font-size: 45px;
+    line-height: 70px;
+   
+}
+.banner-content p{
+    font-size: 16px;
+    line-height: 26px;
+    margin:30px 0;
+   
+}
+.banner-content button{
+    width: 187px;
+    height: 56px;
+    background: #dd0000;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.banner-image{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 50%;
+}
+.banner-image img{
+    width: 80%;
+}
